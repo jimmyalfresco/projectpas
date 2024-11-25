@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}Admin{% endblock %}
+
+{% block content %}
+<h1>Admin Dashboard</h1>
+<a href="{{ url_for('tampil') }}" class="btn btn-primary">View Users</a>
+<a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
+{% endblock %}

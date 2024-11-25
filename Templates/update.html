@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}Update User{% endblock %}
+
+{% block content %}
+<h1>Update User</h1>
+<form action="{{ url_for('aksiupdate') }}" method="post">
+    <input type="hidden" name="id" value="{{ value[0] }}">
+    <div class="form-group">
+        <label for="nama">Name</label>
+        <input type="text" class="form-control" id="nama" name="nama" value="{{ value[1] }}" required>
+    </div>
+    <div class="form-group">
+        <label for="nama_toko">Store Name</label>
+        <input type="text" class="form-control" id="nama_toko" name="nama_toko" value="{{ value[2] }}" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
